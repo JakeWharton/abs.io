@@ -6,6 +6,11 @@ var simples = {
 	'/issues'   : 'https://github.com/JakeWharton/ActionBarSherlock/issues',
 	'/download' : 'http://actionbarsherlock.com/download.html',
 	'/group'    : 'https://groups.google.com/group/actionbarsherlock',
+	'/forum'    : 'https://groups.google.com/group/actionbarsherlock',
+	'/store'    : 'http://actionbarsherlock.spreadshirt.com',
+	'/shop'     : 'http://actionbarsherlock.spreadshirt.com',
+	'/flattr'   : 'https://flattr.com/thing/320252/ActionBarSherlock',
+	'/ohloh'    : 'https://www.ohloh.net/p/ActionBarSherlock',
 }
 for (var simple in simples) {
 	console.log('Redirecting "' + simple + '" to "' + simples[simple] + '"');
