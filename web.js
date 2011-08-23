@@ -29,7 +29,7 @@ app.get(/^\/b(?:ranch)?\/([a-zA-Z0-9_-]+)/, function(req, res) {
 
 //Catch-all
 app.get('*', function(req, res) {
-	res.redirect('http://actionbarsherlock.com');
+	res.redirect('http://actionbarsherlock.com' + req.url);
 });
 
 
