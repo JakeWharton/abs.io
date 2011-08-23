@@ -20,8 +20,11 @@ for (var simple in simples) {
 }
 
 //Regex-based URL redirection
-app.get('/issues?/:id', function(req, res) {
-	res.redirect('https://github.com/JakeWharton/ActionBarSherlock/issues/' + req.params.id);
+app.get(/^\/i(?:ssues?)?\/([0-9]+)/, function(req, res) {
+	res.redirect('https://github.com/JakeWharton/ActionBarSherlock/issues/' + req.params[0]);
+});
+app.get(/^\/b(?:ranch)?\/([a-zA-Z0-9_-]+)/, function(req, res) {
+	res.redirect('https://github.com/JakeWharton/ActionBarSherlock/tree/' + req.params[0]);
 });
 
 //Catch-all
