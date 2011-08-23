@@ -11,6 +11,7 @@ var simples = {
 	'/shop'     : 'http://actionbarsherlock.spreadshirt.com',
 	'/flattr'   : 'https://flattr.com/thing/320252/ActionBarSherlock',
 	'/ohloh'    : 'https://www.ohloh.net/p/ActionBarSherlock',
+	'/donate'   : 'http://actionbarsherlock.com/merch-and-donations.html',
 }
 for (var simple in simples) {
 	console.log('Redirecting "' + simple + '" to "' + simples[simple] + '"');
