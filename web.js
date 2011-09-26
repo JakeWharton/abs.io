@@ -27,6 +27,9 @@ app.get(/^\/i(?:ssues?)?\/([0-9]+)/, function(req, res) {
 app.get(/^\/b(?:ranch)?\/([a-zA-Z0-9_-]+)/, function(req, res) {
 	res.redirect('https://github.com/JakeWharton/ActionBarSherlock/tree/' + req.params[0]);
 });
+app.get(/^\/([0-9A-Fa-f]{6,}/, function(req, res) {
+	res.redirect('https://github.com/JakeWharton/ActionBarSherlock/commit/' + req.params[0]);
+});
 
 //Catch-all
 app.get('*', function(req, res) {
