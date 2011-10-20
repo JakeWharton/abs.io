@@ -12,6 +12,8 @@ var simples = {
 	'/flattr'   : 'https://flattr.com/thing/320252/ActionBarSherlock',
 	'/ohloh'    : 'https://www.ohloh.net/p/ActionBarSherlock',
 	'/donate'   : 'http://actionbarsherlock.com/merch-and-donations.html',
+	'/changelog': 'https://github.com/JakeWharton/ActionBarSherlock/blob/master/CHANGELOG.md#readme',
+	'/tags'     : 'https://github.com/JakeWharton/ActionBarSherlock/tags',
 }
 for (var simple in simples) {
 	console.log('Redirecting "' + simple + '" to "' + simples[simple] + '"');
