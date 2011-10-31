@@ -14,6 +14,7 @@ var simples = {
 	'/donate'   : 'http://actionbarsherlock.com/merch-and-donations.html',
 	'/changelog': 'https://github.com/JakeWharton/ActionBarSherlock/blob/master/CHANGELOG.md#readme',
 	'/tags'     : 'https://github.com/JakeWharton/ActionBarSherlock/tags',
+	'/market'   : 'https://market.android.com/search?q=com.actionbarsherlock',
 }
 for (var simple in simples) {
 	console.log('Redirecting "' + simple + '" to "' + simples[simple] + '"');
