@@ -15,6 +15,7 @@ var simples = {
 	'/changelog': 'https://github.com/JakeWharton/ActionBarSherlock/blob/master/CHANGELOG.md#readme',
 	'/tags'     : 'https://github.com/JakeWharton/ActionBarSherlock/tags',
 	'/market'   : 'https://market.android.com/search?q=com.actionbarsherlock',
+	'/4'        : 'https://github.com/JakeWharton/ActionBarSherlock/wiki/4-Point-Oh!',
 }
 for (var simple in simples) {
 	console.log('Redirecting "' + simple + '" to "' + simples[simple] + '"');
